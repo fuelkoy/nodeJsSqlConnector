@@ -1,18 +1,38 @@
 {
+  // Esbuild with Firebase functions
+  // https://www.totaltypescript.com/build-a-node-app-with-typescript-and-esbuild
   "compilerOptions": {
+    "jsx": "react",
     "allowJs": true,
+    // "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "moduleDetection": "force",
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noEmit": true,
+    // "outDir": "lib",
+    // "removeComments": true,
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
     "strict": true,
-    "lib": ["ES2022"],
+    "strictNullChecks": true,
+    "lib": [
+      "ES2022"
+    ],
     "target": "ES2022",
+    "skipLibCheck": true,
+    // "sourceMap": true,
+    "useUnknownInCatchVariables": true,
+    // /* Path */
+    // "baseUrl": "../.",
+    // "paths": {
+    //   "~/*": ["src/*"]
+    // }
   },
-  "compileOnSave": true,
   "include": [
-    "src"
+    "src",
+    "drizze.config.ts"
   ]
 }
